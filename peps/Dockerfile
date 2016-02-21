@@ -6,7 +6,7 @@ FROM opa:latest
 MAINTAINER MLstate <contact@mlstate.com>
 
 # Download the peps executable
-RUN curl -sf -o /tmp/peps.zip -L https://github.com/MLstate/PEPS/releases/download/0.9.9/peps.zip
+RUN curl -sf -o /tmp/peps.zip -L https://github.com/safiresh/PEPS/releases/download/0.9.10/peps.zip
 RUN mkdir -p /peps && cd /peps && unzip -q /tmp/peps.zip
 RUN rm /tmp/peps.zip
 
